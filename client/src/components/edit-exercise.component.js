@@ -78,12 +78,12 @@ export default class EditExercise extends Component {
             date: this.state.date
         };
 
-        console.log(exercise);
+        // console.log(exercise);
 
         axios.post(UPDATE_EXERCISES + this.props.match.params.id, exercise)
-            .then(res => console.log(res));
+            .then(res => window.location = '/');
 
-        window.location = '/';
+
     }
 
     render() {

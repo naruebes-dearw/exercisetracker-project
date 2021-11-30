@@ -34,7 +34,7 @@ export default class ExerciseList extends Component {
 
   deleteExercise(id) {
     axios.delete(DELETE_EXERCISES + id)
-      .then(res => console.log(res))
+      // .then(res => console.log(res))
       .catch(err => console.log(err));
 
     this.setState({
